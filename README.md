@@ -51,7 +51,7 @@ Task is to classify the likelihood of a URL: Phishing , Benign.
    - Oversampling with SMOTE:Used SMOTE (Synthetic Minority Over-sampling Technique) to balance the training data, especially for the minority class.
      ![cd107d3e-734f-42e5-8dcf-bb36ae821eeb](https://github.com/RimTouny/Phishing-Attack-Detection-using-Machine-Learning/assets/48333870/8c183957-7e30-4eb0-92a1-49194eacb8c3)
 
-5. **Features Selection:**Developed a function to assess and identify features with overwhelmingly repeated maximum values.
+5. **Features Selection:** Developed a function to assess and identify features with overwhelmingly repeated maximum values.
    1. Evaluated the percentage of occurrences for the most frequent value in each feature.
    2. Removed features where the maximum value was repeated over 90% of the time.
    3. Applied a 90% repetition threshold to exclude less informative or near-constant features.
