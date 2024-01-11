@@ -30,6 +30,10 @@ Task is to classify the likelihood of a URL: Phishing , Benign.
       
 2. **Data Concatenation:**
     - Concatenated multiple DataFrames vertically into a single DataFrame.
+      + [PhishStorm-URL dataset](https://research.aalto.fi/en/datasets/phishstorm-phishing-legitimate-url-dataset#:~:text=The%20dataset%20contains%2096%2C018%20URLs,%3A%20legitimate%20%2F%201%3Aphishing.): 96011 Data Size.
+      + [ISCX-URL2016 dataset](https://www.unb.ca/cic/datasets/url-2016.html): Extracted only Phishing / Legitimate from165366 rows.
+      + [Malicious URL dataset](https://www.kaggle.com/sid321axn/malicious-urls-dataset.): 651,191 Data Size
+
     - Checked for and removed duplicate rows from the concatenated DataFrame.
       
 3. **Data Balancing:**
