@@ -7,13 +7,18 @@ Advancing Cybersecurity with AI: This project fortifies phishing defense using c
 
 
 ## Binary-class classification problem
-Task is to classify the email dataset into two classes: Spam / Not Spam.
+Task is to classify the likelihood of a URL: Phishing , Benign.
 
 ### Independent Variables:
-   +	57 Features related to word frequencies, character frequencies, and capital run lengths.
-### Target variable:
-   +	'Target' indicating the classification into two classes.
+ The independent variables in the provided dataset can be categorized into three groups:
+   + Length and Count Features:These include measures related to the length and count of different components in a URL, such as domain length, URL length, count of digits, letters, path components, and various symbols.
 
+   + Boolean Features:These features are binary indicators, representing the presence or absence of certain characteristics in a URL, such as whether it contains an IP address (ip), has redirection (redirection), uses IPv notation (ipv), is a shortened URL (short), is encoded (is_encoded), or has a suspicious top-level domain (sus).
+     
+   + Calculation-Based Features:These features involve calculated values based on the URL, including a malicious probability score (malicious_probability), entropy of characters (entropy), and a ratio of special characters and digits to the total characters in the URL (ratio).
+     
+### Target variable:
+   +	'Label' indicating the classification into two classes: 1 (Phishing) / 0 (Benign)
 
 ## **Key Tasks Undertaken**
 
