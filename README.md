@@ -61,7 +61,8 @@ Task is to classify the likelihood of a URL: Phishing , Benign.
    
 6. **Modeling:**
    - Model Training: Trained various classification models (Logistic Regression, SVM, Decision Tree, Random Forest, XGBoost, etc.) using LazyClassifier.
-     ![image](https://github.com/RimTouny/Phishing-Attack-Detection-using-Machine-Learning/assets/48333870/f78fea05-d16f-4263-ae84-8257b240520b)
+
+      ![image](https://github.com/RimTouny/Phishing-Attack-Detection-using-Machine-Learning/assets/48333870/f78fea05-d16f-4263-ae84-8257b240520b)
 
    - Bias-Variance Decomposition: Implemented a function for bias-variance decomposition to analyze and quantify the bias and variance for each model.
 
