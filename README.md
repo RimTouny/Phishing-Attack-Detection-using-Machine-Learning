@@ -1,5 +1,7 @@
 # **Phishing Attack Detection using Machine Learning**
-Advancing Cybersecurity with AI: This project fortifies phishing defense using cutting-edge models, trained on a diverse dataset of 737,000 URLs. It was the final project for the AI for Cybersecurity course in my Master's at uOttawa in 2023
+Advancing Cybersecurity with AI: This project fortifies phishing defense using cutting-edge models, trained on a diverse dataset of 737,000 URLs. It was the final project for the AI for Cybersecurity course in my Master's at uOttawa in 2023.
+![image](https://github.com/RimTouny/Phishing-Attack-Detection-using-Machine-Learning/assets/48333870/e1bbec1b-c00d-4e98-969f-82db3805a538)
+
 
 - Required libraries: scikit-learn, pandas, matplotlib.
 - Execute cells in a Jupyter Notebook environment.
@@ -57,29 +59,31 @@ Task is to classify the likelihood of a URL: Phishing , Benign.
      ![image](https://github.com/RimTouny/Phishing-Attack-Detection-using-Machine-Learning/assets/48333870/9a04e2bd-66e1-478c-97b3-9f548f4b84d9)
 
    
-7. **Modeling:**
+6. **Modeling:**
    - Model Training: Trained various classification models (Logistic Regression, SVM, Decision Tree, Random Forest, XGBoost, etc.) using LazyClassifier.
      ![image](https://github.com/RimTouny/Phishing-Attack-Detection-using-Machine-Learning/assets/48333870/f78fea05-d16f-4263-ae84-8257b240520b)
 
-   - Performance Evaluation: Evaluated each model's performance using confusion matrices, F1 scores, classification reports, and other relevant metrics.
-     ![image](https://github.com/RimTouny/Phishing-Attack-Detection-using-Machine-Learning/assets/48333870/dcb3452c-9cea-410e-a783-b88ff01c3269)
-     ![merge_from_ofoct](https://github.com/RimTouny/Phishing-Attack-Detection-using-Machine-Learning/assets/48333870/5d221d94-121e-460a-a4cf-37959f876db6)
-
-8. **Bias-Variance Analysis:**
    - Bias-Variance Decomposition: Implemented a function for bias-variance decomposition to analyze and quantify the bias and variance for each model.
 
-9. **Stacking and Voting Classifiers:**
-   - Stacking Classifiers: Implemented stacking classifiers using different base models and a meta-model (Logistic Regression).
-   - Soft Voting: Applied soft voting to combine results from multiple models.
+   - Performance Evaluation: Evaluated each model's performance using confusion matrices, F1 scores, classification reports, and other relevant metrics.
+     ![merge_from_ofoct](https://github.com/RimTouny/Phishing-Attack-Detection-using-Machine-Learning/assets/48333870/9341a57f-79f0-4ccf-a81e-ebb76291a376)
+
+     
+
+7. **Stacking and Voting Classifiers:**
+   - Selecting the two models with the highest true positive rates and the two with the highest true negative
+rates.
+   - Combining each pair of top models using a stacking classifier approach to create ensemble models.
+   - Applying soft voting to the predictions from the two ensemble models.
+   - Re-evaluating the final integrated model on the test set and comparing its performance to the highest traditional model.
    
-10. **Comparing and Selecting Models:**
-    - Model Comparison: Analyzed and compared models based on key metrics such as True Positive (TP), True Negative (TN), and F1 score.
-    - Model Selection: Selected the best-performing models based on the analysis.
+   ![merge_from_ofoct (1)](https://github.com/RimTouny/Phishing-Attack-Detection-using-Machine-Learning/assets/48333870/e8bc9d84-eaa7-4db9-8214-a757d0cc7a41)
+   
+   ![image](https://github.com/RimTouny/Phishing-Attack-Detection-using-Machine-Learning/assets/48333870/0c87e55b-262d-41bd-a23f-976e2ffd51e2)
+   
 
-11. **Ensemble Classifier:**
-    - Soft Voting Ensemble: Created an ensemble classifier using soft voting with the best models for True Positive and True Negative.
-   - Evaluation: Evaluated the performance of the ensemble classifier.
+9. **Champion Model:**
+    ![image](https://github.com/RimTouny/Phishing-Attack-Detection-using-Machine-Learning/assets/48333870/a42964ae-2160-47f4-b67f-f41952ea0f54)
 
-11. **Results Comparison:**
-    - Displayed and compared the results of the champion model and the ensemble classifier.
+   
 
