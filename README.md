@@ -62,13 +62,13 @@ Task is to classify the email dataset into two classes: Spam / Not Spam.
    - Soft Voting: Applied soft voting to combine results from multiple models.
    
 10. **Comparing and Selecting Models:**
-   - Model Comparison: Analyzed and compared models based on key metrics such as True Positive (TP), True Negative (TN), and F1 score.
-   - Model Selection: Selected the best-performing models based on the analysis.
+    - Model Comparison: Analyzed and compared models based on key metrics such as True Positive (TP), True Negative (TN), and F1 score.
+    - Model Selection: Selected the best-performing models based on the analysis.
 
 11. **Ensemble Classifier:**
-   - Soft Voting Ensemble: Created an ensemble classifier using soft voting with the best models for True Positive and True Negative.
+    - Soft Voting Ensemble: Created an ensemble classifier using soft voting with the best models for True Positive and True Negative.
    - Evaluation: Evaluated the performance of the ensemble classifier.
 
 12. **Results Comparison:**
-   - Displayed and compared the results of the champion model and the ensemble classifier.
+    - Displayed and compared the results of the champion model and the ensemble classifier.
 
