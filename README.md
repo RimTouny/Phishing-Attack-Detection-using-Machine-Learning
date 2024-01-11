@@ -22,46 +22,48 @@ Task is to classify the likelihood of a URL: Phishing , Benign.
 
 ## **Key Tasks Undertaken**
 
-1. **Data Loading and Exploration:**
-    - Loaded CSV files into Pandas DataFrames.
-    - Created a binary column based on an existing column.
-    - Explored and visualized the distribution of labels using a pie chart.
-    - Checked for and displayed duplicate rows in the DataFrames.
-      
-2. **Data Concatenation:**
+1. **Data Concatenation:**
     - Concatenated multiple DataFrames vertically into a single DataFrame.
       + [PhishStorm-URL dataset](https://research.aalto.fi/en/datasets/phishstorm-phishing-legitimate-url-dataset#:~:text=The%20dataset%20contains%2096%2C018%20URLs,%3A%20legitimate%20%2F%201%3Aphishing.): 96011 Data Size.
       + [ISCX-URL2016 dataset](https://www.unb.ca/cic/datasets/url-2016.html): Extracted only Phishing / Legitimate from165366 rows.
       + [Malicious URL dataset](https://www.kaggle.com/sid321axn/malicious-urls-dataset.): 651,191 Data Size
 
-    - Checked for and removed duplicate rows from the concatenated DataFrame.
-      
-3. **Data Balancing:**
-    - Balanced the dataset by randomly undersampling the majority class.
-    - Displayed the class distribution in the balanced dataset using a pie chart.
-      
-4. **Feature Extraction:**
+2. **Feature Extraction:**
     - Defined a function for extracting features from URLs.
     - Extracted various features such as domain, path, first directory length, presence of IP address, URL length, etc.
     - Calculated counts and frequencies of characters, entropy, URL decoding, and presence of unusual characters.
     - Checked for URL shortening, special characters, and suspicious top-level domains.
   
-5. **Exploratory Data Analysis (EDA)**
+3. **Exploratory Data Analysis (EDA)**
    - Checked dataset information, including data types and non-null counts.
    - Explored unique values in the dataset.
    - Computed and displayed descriptive statistics for numerical features.
    - Visualized data distribution using boxplots, violin plots, histograms, and correlation matrices.
+     ![merge_from_ofoct](https://github.com/RimTouny/Phishing-Attack-Detection-using-Machine-Learning/assets/48333870/8d073d3c-378a-478e-9cd5-da7beaa389ee)
+     ![image](https://github.com/RimTouny/Phishing-Attack-Detection-using-Machine-Learning/assets/48333870/3e908238-3f1d-423c-b64a-380a58d02922)
 
-6. **Feature Engineering and Data Cleaning:**
+4. **Feature Engineering and Data Cleaning:**
    - Handling Null Values and Duplicate Rows
    - Handling Repeated Maximum Values
-   - Investigated features with overwhelmingly repeated maximum values and took appropriate actions.
+   - Spilting Data: Train 80% , Test 20%
    - Oversampling with SMOTE:Used SMOTE (Synthetic Minority Over-sampling Technique) to balance the training data, especially for the minority class.
+     ![cd107d3e-734f-42e5-8dcf-bb36ae821eeb](https://github.com/RimTouny/Phishing-Attack-Detection-using-Machine-Learning/assets/48333870/8c183957-7e30-4eb0-92a1-49194eacb8c3)
 
+5. **Features Selection:**Developed a function to assess and identify features with overwhelmingly repeated maximum values.
+   1. Evaluated the percentage of occurrences for the most frequent value in each feature.
+   2. Removed features where the maximum value was repeated over 90% of the time.
+   3. Applied a 90% repetition threshold to exclude less informative or near-constant features.
+   4. Improved model efficiency and computational performance by reducing redundancy in the dataset.
+     ![image](https://github.com/RimTouny/Phishing-Attack-Detection-using-Machine-Learning/assets/48333870/9a04e2bd-66e1-478c-97b3-9f548f4b84d9)
+
+   
 7. **Modeling:**
    - Model Training: Trained various classification models (Logistic Regression, SVM, Decision Tree, Random Forest, XGBoost, etc.) using LazyClassifier.
+     ![image](https://github.com/RimTouny/Phishing-Attack-Detection-using-Machine-Learning/assets/48333870/f78fea05-d16f-4263-ae84-8257b240520b)
 
    - Performance Evaluation: Evaluated each model's performance using confusion matrices, F1 scores, classification reports, and other relevant metrics.
+     ![image](https://github.com/RimTouny/Phishing-Attack-Detection-using-Machine-Learning/assets/48333870/dcb3452c-9cea-410e-a783-b88ff01c3269)
+     ![merge_from_ofoct](https://github.com/RimTouny/Phishing-Attack-Detection-using-Machine-Learning/assets/48333870/5d221d94-121e-460a-a4cf-37959f876db6)
 
 8. **Bias-Variance Analysis:**
    - Bias-Variance Decomposition: Implemented a function for bias-variance decomposition to analyze and quantify the bias and variance for each model.
@@ -78,6 +80,6 @@ Task is to classify the likelihood of a URL: Phishing , Benign.
     - Soft Voting Ensemble: Created an ensemble classifier using soft voting with the best models for True Positive and True Negative.
    - Evaluation: Evaluated the performance of the ensemble classifier.
 
-12. **Results Comparison:**
+11. **Results Comparison:**
     - Displayed and compared the results of the champion model and the ensemble classifier.
 
