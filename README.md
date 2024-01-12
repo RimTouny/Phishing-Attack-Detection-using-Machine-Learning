@@ -1,7 +1,10 @@
 # **Phishing Attack Detection using Machine Learning**
 Advancing Cybersecurity with AI: This project fortifies phishing defense using cutting-edge models, trained on a diverse dataset of 737,000 URLs. It was the final project for the AI for Cybersecurity course in my Master's at uOttawa in 2023.
-![image](https://github.com/RimTouny/Phishing-Attack-Detection-using-Machine-Learning/assets/48333870/e1bbec1b-c00d-4e98-969f-82db3805a538)
 
+ <p align="center">
+  <img src="https://github.com/RimTouny/Phishing-Attack-Detection-using-Machine-Learning/assets/48333870/e1bbec1b-c00d-4e98-969f-82db3805a538)" />
+</p>
+  
 
 - Required libraries: scikit-learn, pandas, matplotlib.
 - Execute cells in a Jupyter Notebook environment.
@@ -61,14 +64,17 @@ Task is to classify the likelihood of a URL: Phishing , Benign.
    
 6. **Modeling:**
    - Model Training: Trained various classification models (Logistic Regression, SVM, Decision Tree, Random Forest, XGBoost, etc.) using LazyClassifier.
-
-      ![image](https://github.com/RimTouny/Phishing-Attack-Detection-using-Machine-Learning/assets/48333870/f78fea05-d16f-4263-ae84-8257b240520b)
+  
+    <p align="center">
+   <img src="https://github.com/RimTouny/Phishing-Attack-Detection-using-Machine-Learning/assets/48333870/e1bbec1b-c00d-4e98-969f-82db3805a538)" />
+   </p>
 
    - Bias-Variance Decomposition: Implemented a function for bias-variance decomposition to analyze and quantify the bias and variance for each model.
 
    - Performance Evaluation: Evaluated each model's performance using confusion matrices, F1 scores, classification reports, and other relevant metrics.
-     ![merge_from_ofoct](https://github.com/RimTouny/Phishing-Attack-Detection-using-Machine-Learning/assets/48333870/9341a57f-79f0-4ccf-a81e-ebb76291a376)
-
+     <p align="center">
+     <img src="https://github.com/RimTouny/Phishing-Attack-Detection-using-Machine-Learning/assets/48333870/9341a57f-79f0-4ccf-a81e-ebb76291a376" />
+     </p>
      
 
 7. **Stacking and Voting Classifiers:**
@@ -78,13 +84,17 @@ rates.
    - Applying soft voting to the predictions from the two ensemble models.
    - Re-evaluating the final integrated model on the test set and comparing its performance to the highest traditional model.
    
-   ![merge_from_ofoct (1)](https://github.com/RimTouny/Phishing-Attack-Detection-using-Machine-Learning/assets/48333870/e8bc9d84-eaa7-4db9-8214-a757d0cc7a41)
+     <p align="center">
+     <img src="https://github.com/RimTouny/Phishing-Attack-Detection-using-Machine-Learning/assets/48333870/e8bc9d84-eaa7-4db9-8214-a757d0cc7a41)" />
+     </p>
    
-   ![image](https://github.com/RimTouny/Phishing-Attack-Detection-using-Machine-Learning/assets/48333870/0c87e55b-262d-41bd-a23f-976e2ffd51e2)
+    ![image](https://github.com/RimTouny/Phishing-Attack-Detection-using-Machine-Learning/assets/48333870/0c87e55b-262d-41bd-a23f-976e2ffd51e2)
    
 
 9. **Champion Model:**
-    ![image](https://github.com/RimTouny/Phishing-Attack-Detection-using-Machine-Learning/assets/48333870/a42964ae-2160-47f4-b67f-f41952ea0f54)
+      <p align="center">
+     <img src="https://github.com/RimTouny/Phishing-Attack-Detection-using-Machine-Learning/assets/48333870/a42964ae-2160-47f4-b67f-f41952ea0f54" />
+     </p>   
 
    
 
